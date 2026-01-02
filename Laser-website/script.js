@@ -1,0 +1,1 @@
+console.log("Laser Website Loaded Successfully!");

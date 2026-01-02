@@ -1,0 +1,70 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('assets/hero-bg.jpg') center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    text-shadow: 0 0 20px #0ff;
+}
+
+/* Text */
+h1 {
+    font-size: 6rem;
+    letter-spacing: 12px;
+    color: #0ff;
+    text-shadow:
+        0 0 8px #0ff,
+        0 0 20px #00faff,
+        0 0 40px #00faff,
+        0 0 80px #00fff2;
+    animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 8px #0ff;
+    }
+    to {
+        text-shadow:
+        0 0 8px #0ff,
+        0 0 20px #00faff,
+        0 0 40px #00faff,
+        0 0 80px #00fff2;
+    }
+}
+
+/* Button */
+.cta-btn {
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: #0ff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    background: #f0f;
+    box-shadow: 0 0 25px #f0f;
+}
+
+/* Sections */
+section {
+    padding: 80px 10%;
+    text-align: center;
+    background: #111;
+}
